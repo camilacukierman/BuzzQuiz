@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>BuzzQuiz</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="starter-template.css" rel="stylesheet">
+    <link href="css_BuzzQuiz.css" rel="stylesheet">
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap.min.js" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container menu">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand menutitle" href="#">Who are u in </a>
+        </div>
+
+    </div>
+</nav>
+
+<div id="count"></div>
+<div class="stripe-mar">
+
+    <div class="stripe1"></div>
+    <label for="name">Name</label>
+    <input type="text" id="name" placeholder="Name"/>
+
+
+    <label for="age">Age</label>
+    <input type="number" id="age" placeholder="Age">
+    <button onclick="confirmAge()"> Confirm</button>
+    <p id="showMessage"></p>
+
+
+    <input type="radio" name="gender" value="1"> Male <br>
+    <input type="radio" name="gender" value="2"> Female <br>
+    <input type="radio" name="gender" value="3"> Other <br>
+    <br>
+
+
+    <label> Do u smoke?</label><br>
+    <input type="radio" name="smoke" value="yes"> Yes <br>
+    <input type="radio" name="smoke" value="no"> No <br>
+    <br>
+
+
+    <label> 1) How many times a week u go to Backys?</label><br>
+
+    <input type="radio" name="times" value="10"> 3 <br>
+    <input type="radio" name="times" value="20"> 4 <br>
+    <input type="radio" name="times" value="30"> 5/6!<br>
+    <input type="radio" name="times" value="40"> everyday, of course!<br>
+    <br>
+
+    <label> 2) Whats your chaiser?</label><br>
+
+    <input type="checkbox" name="alchool" value="20"> Figs - i take care <img class="bottles"
+                                                                              src="https://s-media-cache-ak0.pinimg.com/736x/ec/c6/5b/ecc65b211adb0cabd70e31231f5de613.jpg" alt="img1"> <br>
+    <input type="checkbox" name="alchool" value="10"> Arak, im a real israeli <img class="bottles"
+                                                                                   src="http://cdn.timesofisrael.com/blogs/uploads/2012/06/Arak4.jpg" alt="img2"> <br>
+    <input type="checkbox" name="alchool" value="40"> Vodka/Whisky/Tequila - this is how we do!<img class="bottles"
+                                                                                                    src="http://zanibonibebidas.com.br/imagens/imagens/destilados.jpg" alt="img3"> <br>
+    <input type="checkbox" name="alchool" value="30"> Campari - i just pretend im drinking <img class="bottles"
+                                                                                                src="http://www.lcbo.com/content/dam/lcbo/products/277954.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg" alt="img4"><br>
+    <br>
+
+    <label> 3) Where would you be at midnigth?</label><br>
+
+    <input type="checkbox" name="midnigth" value="40"> out side<br>
+    <input type="checkbox" name="midnigth" value="10"> Talking with some boy/girl<br>
+    <input type="checkbox" name="midnigth" value="20"> On the bar !!<br>
+    <input type="checkbox" name="midnigth" value="30"> Next to the dj <br>
+    <input type="checkbox" name="midnigth" value="50"> in the bathroom not felling good! <br>
+    <br>
+
+    <label> 4) Its freazing outside, what are you wearing?</label><br>
+
+    <input type="radio" name="cold" value="30"> shirts without sleeves<br>
+    <input type="radio" name="cold" value="40"> Black <br>
+    <input type="radio" name="cold" value="10"> Jeans and Blundstone <br>
+    <input type="radio" name="cold" value="20"> Thigh blouse<br>
+    <br>
+
+    <label> 5) Its 40 degrees, what are you wearing?</label><br>
+
+    <input type="radio" name="hot" value="30"> shirts without sleeves<br>
+    <input type="radio" name="hot" value="40"> Black <br>
+    <input type="radio" name="hot" value="10"> Jeans and Blundstone <br>
+    <input type="radio" name="hot" value="20"> Thigh blouse<br>
+    <br>
+
+
+    <label> 6) Which music u would love to hear? </label><br>
+
+    <input type="radio" name="music" value="20"> Mizhari<br>
+    <input type="radio" name="music" value="10"> Rock <br>
+    <input type="radio" name="music" value="40"> Israeli Music <br>
+    <input type="radio" name="music" value="30">Pop <br>
+    <br>
+
+    <label> 7) Which day is your favorite? </label><br>
+
+    <input type="radio" name="day" value="30"> Backy shel Sheni<br>
+    <input type="radio" name="day" value="40"> Revii Israeli <br>
+    <input type="radio" name="day" value="20"> Chamishi Erev <br>
+    <input type="radio" name="day" value="10"> Shishi ba Thzooraim<br>
+    <br>
+
+    <label> 8) What time do u arrive? </label><br>
+
+    <input type="radio" name="arrive" value="20"> i open it !<br>
+    <input type="radio" name="arrive" value="40"> something around 22 <br>
+    <input type="radio" name="arrive" value="30"> just at midnigth <br>
+    <input type="radio" name="arrive" value="10"> do to the after party<br>
+    <br>
+
+    <label> 9) What do you do in your free time? </label><br>
+
+    <input type="radio" name="freetime" value="30"> i dont have free time im always in Backys<br>
+    <input type="radio" name="freetime" value="20"> selfies with my Backy hat <br>
+    <input type="radio" name="freetime" value="40"> photoshoot to the next Backy event <br>
+    <input type="radio" name="freetime" value="10"> interview new employees<br>
+
+    <label> 9) What means Backy for u? </label><br>
+
+    <input type="radio" name="backy" value="30">Really nice Bar<br>
+    <input type="radio" name="backy" value="20"> my 2nd Home <br>
+    <input type="radio" name="backy" value="40"> my 1st Home <br>
+    <input type="radio" name="backy" value="10"> Just work<br>
+    <br>
+
+    <label> 11) How drunk u are in the end of the nigth? </label><br>
+
+
+    <input type="range" id="myRange" value="50">
+
+    <button onclick="levelDrunk()">See level of drunkness</button>
+    <p id="demo"></p>
+
+    <button onclick="printOut()"> Confirm </button>  <p id="showWhoYouAre"></p>
+    <br>
+
+
+</div>
+
+
+
+<script src="../../js/bootstrap.min.js"></script>
+
+<script src="js_BuzzQuizz.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
